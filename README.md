@@ -35,7 +35,11 @@ In order to check the deployment status, open the AWS Console and check the stat
 </html>
 ```
 
-Upload the file to the previously created bucket. Since I wanted my site to be accessible to anyone visiting, I chose the option to grant public read access.
+Upload the file to the previously created bucket. To do this, the next command can be used:
+
+```sh
+aws s3 cp .\index.html s3://carmenilie-s3-bucket/
+```
 
 **Step 4** - I changed the template.yaml file as below in order to enable website hosting:
 
